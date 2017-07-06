@@ -12,6 +12,8 @@ class MyTests(unittest.TestCase):
         self.assertEqual(score("X34----------------"),   24)
     def test_perfect_game(self):
         self.assertEqual(score("XXXXXXXXXXXX"),          300)
+    def test_case_sensitivity(self):
+        self.assertEqual(score("XXxxxXXXXxXx"),          300)
     def test_everything_is_fine_please(self):
         self.assertEqual(score("11111111112222222222"), 30)
         self.assertEqual(score("5/11------------3/11"), 26)
