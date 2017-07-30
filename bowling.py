@@ -32,7 +32,7 @@ def score(game):
 def get_value(char):
     if char.isdigit():
         return int(char)
-    elif char == 'X' or char == 'x':
+    elif char.upper() == 'X':
         return 10
     elif char == '/':
         return 10
