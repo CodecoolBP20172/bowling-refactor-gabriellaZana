@@ -19,10 +19,7 @@ def score(game):
         last = get_value(game[line])
         if not in_first_half:
             frame += 1
-        if in_first_half is True:
-            in_first_half = False
-        else:
-            in_first_half = True
+        in_first_half = not in_first_half
         if game[line].upper() == 'X':
             in_first_half = True
             frame += 1
