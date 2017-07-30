@@ -23,7 +23,7 @@ def score(game):
             in_first_half = False
         else:
             in_first_half = True
-        if game[line] == 'X' or game[line] == 'x':
+        if game[line].upper() == 'X':
             in_first_half = True
             frame += 1
     return result
