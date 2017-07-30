@@ -10,7 +10,7 @@ def score(game):
         if frame < 10 and get_value(game[line]) == 10:
             if game[line] == '/':
                 result += get_value(game[line+1])
-            elif game[line] == 'X' or game[line] == 'x':
+            elif game[line].upper() == 'X':
                 result += get_value(game[line+1])
                 if game[line+2] == '/':
                     result += 10 - get_value(game[line+1])
